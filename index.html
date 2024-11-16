@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alyaa's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="profile.jpg" alt="Alyaa's Photo" class="profile-img">
+            <h1>Alyaa Yasser Hussien Khedr</h1>
+            <p> Network Security Engineer </p>
+            <nav>
+                <ul>
+                    <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+                    <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#education" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#experience" onclick="showSection('experience')">Experience</a></li>
+                    <li><a href="#certifications" onclick="showSection('certifications')">Certifications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="content" class="container">
+        <!-- About Me Section -->
+        <section id="about" class="section active">
+            <h2>About Me</h2>
+            <p>I am passionate about IT and cybersecurity. I have a strong background in systems and computer engineering, with hands-on experience in network infrastructure and network security.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Java, C++, Python</li>
+                <li>Networking: Cisco, MySQL, Network Security</li>
+                <li>Tools: PNetLab, Packet Tracer</li>
+                <li>Software: Microsoft Office, Windows Server</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor's Degree in Systems and Computer Engineering - Al-Azhar University (2019-2024)</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>Network Infrastructure Simulation Project for Banking System (Graduation Project)</li>
+                <li>Completed training in HCIA Security and CCNA V7</li>
+                <li>Part of entrepreneurial and student activities at university</li>
+            </ul>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Microsoft Certified Solutions Associate (MCSA)</li>
+                <li>HCIA Security</li>
+                <li>CCNA V7</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Alyaa Yasser Hussien Khedr</p>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+            <a href="https://github.com/your-github" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
